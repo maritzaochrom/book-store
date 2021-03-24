@@ -33,9 +33,10 @@ app.set('view engine', 'hbs');
 
 /** LOGGING */
 app.use(morgan("dev"));
-  
+
 /**CONNECT TO DB */
-mongoose.connect("mongodb://localhost:27017/book-shop", {
+// mongodb://localhost:27017/book-shop
+mongoose.connect("mongodb+srv://dcibookstore:test123@cluster0.kwrlt.mongodb.net/dcibookstore?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
